@@ -5,53 +5,52 @@
     <meta name="viewport" content="width=device-width"; initial-scale="1.0">
     <title>Index</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-    <link href="/../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <link href="/../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
 
 
 
 </head>
 <body bgcolor="#7fffd4">
 <div class="jumbotron boxlogin container col-md-4 col-md-offset-4">
-    <script src="/../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="/../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/angular/angular.js"></script>
-    <script src="/../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/angular-animate/angular-animate.min.js.map"></script>
+    <script src="../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/angular/angular.js"></script>
+    <script src="../UN2-EVFINAL1-Salazar_Romero_Abarca/bower_components/angular-animate/angular-animate.min.js.map"></script>
 
     <script src="../controller/funciones.js"></script>
 
     <div class="text-center">
         <h2><I><PRE>Crear una nueva tarea</PRE></I></h2>
 
-
+        <form>
         <div ng-controller="ctrlAnimate" class="container">
             <div class="text-center">
-                <input ng-model="tarea.nueva" placeholder="Ingrese nueva tarea" class="text-center">
+                <input ng-model="tarea.nombre" placeholder="Ingrese nueva tarea" class="text-center">
                 
-                <button autofocus="autofocus" class="btn btn-info btn-sm" ng-click="obtenerInfo()">Crear Nueva Tarea</button>
+                <button autofocus="autofocus" class="btn btn-info btn-sm" type="submit">Crear Nueva Tarea</button>
             </div>
             <br>
             <div class="item varios">
                 <div class="table-responsive"  id="gridApiRest">
-                    <!--<div class="table-responsive" style="display: none" id="gridApiRest">-->
 
-                    <table class="table table-bordered" ng-show="ver">
+                    <table class="table table-bordered" ng-show="true">
 
                         <tr>
 
                             <th class="text-center">Tarea</th>
                             <th class="text-center">Editar</th>
-                            <th class="text-center">Borrar</th>
+                            <th class="text-center">Eliminar</th>
 
                         </tr>
 
                         <tr>
                             <!--esto iba dentro de: <tr ng-repeat="prod in informacion"> -->
 
-                            <td>{{ informacion.code }}</td>
-                            <td>{{ informacion.date }}</td>
-                            <td>{{ informacion.temp }}</td>
+                            <td><a href="#">{{ tarea.nombre }}</a></td>
+                            <td><a href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/detalle.html">Editar</a></td>
+                            <td><a href="#">Eliminar</a></td>
 
 
                         </tr>
@@ -63,6 +62,7 @@
                 </div>
             </div>
         </div>
+        </form>
     </div>
 </div>
 

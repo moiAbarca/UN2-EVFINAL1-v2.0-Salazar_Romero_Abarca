@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width"; initial-scale="1.0">
     <title>Index</title>
 
-    <link href="/../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <link href="/../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
 
 
 <!--    <script LANGUAGE="Javascript">
@@ -32,16 +32,17 @@
     <div class="text-center">
         <h1><I><PRE>Evaluación 2</PRE></I></h1>
     </div>
-    <form name="Formulario" action="../../main/views/MainView.html" onsubmit="return validacion()">
+    <form name="Formulario" action="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/MainView.html" >
+        <!--onsubmit="return validacion()"-->
         <div>
             <label for="username">Usuario</label>
             <input type="text" class="form-control text-center" name="username" placeholder="Ingrese Usuario" id="username"
-                   value="" autofocus="autofocus" required="required" ng-model="usuario.username" value="{{usuario.username}}">
+                   value="" autofocus="autofocus" required="required" ng-model="usuario.username">
         </div>
         <div>
             <label for="password">Password</label>
             <input type="password" class="form-control text-center" required="required" id="password" placeholder="Ingrese password"
-                   ng-model="usuario.password" value="{{usuario.password}}">
+                   ng-model="usuario.password">
         </div>
         <div>
             <br>
