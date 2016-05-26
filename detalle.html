@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"; initial-scale="1.0">
+    <title>Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <link href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+
+
+
+</head>
+<body bgcolor="#7fffd4">
+<div class="jumbotron boxlogin container col-md-4 col-md-offset-4">
+    <script src="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js.map"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!--<script src="../controller/funciones.js"></script>-->
+
+    <div class="text-center">
+        <div class="page-header">
+        <h2><I><PRE>Administrar tareas</PRE></I></h2>
+        </div>
+        <form>
+
+
+        <div ng-controller="ctrlAnimate" class="container">
+            <div class="text-center">
+                <input type="text" ng-model="tarea.nombre" value="{{tarea.nombre}}" placeholder="Tarea" class="text-center">
+            </div>
+            <br>
+            <div>
+                <button type="submit">Actualizar</button>
+                <button type="submit">Eliminar</button>
+            </div>
+            <br>
+        </div>
+        </form>
+        <div>
+            <a href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/MainView.html">Regresar</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
