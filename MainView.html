@@ -22,20 +22,22 @@
     <div class="text-center">
         <h2><I><PRE>Crear una nueva tarea</PRE></I></h2>
 
-        <form>
+
         <div ng-controller="ctrlTarea" class="container">
+            <form>
             <div class="text-center has-feedback">
                 <input type="text" ng-model="tarea.nombre" placeholder="Ingrese nueva tarea" class="text-center form-control">
-                
-                <button autofocus="autofocus" ng-click="agregar()" class="btn btn-info btn-sm" type="submit">Crear Nueva Tarea</button>
+                <br>
+                <button autofocus="autofocus" ng-click="agregar()" class="btn btn-success" type="submit">Crear Nueva Tarea</button>
+                </div>
         </form>
-                <br>{{tareas}}<br>
-            </div>
+
+
             <br>
-            <div class="itemVarios bg-info">
+    <div class="itemVarios bg-info">
                 <div class="table-responsive item"  id="gridApiRest">
 
-                    <table class="table table-bordered" ng-show="true">
+                    <table class="table table-bordered">
 
                         <tr>
 
@@ -45,27 +47,22 @@
 
                         </tr>
 
-                        <tr>
-                            <!--esto iba dentro de: <tr ng-repeat="prod in informacion"> -->
+                        <tr ng-repeat="tarea in tareas">
 
-                            <td><a href="#"> {{tarea.nombre}} </a> </td>
-                            <td><a href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/detalle.html">Editar</a></td>
-                            <td><a href="#">Eliminar</a></td>
-
+                            <td>{{tarea.nombre}}</td>
+                            <td><a href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/detalle.html" class="text-warning">Editar</a></td>
+                            <td><button ng-click="eliminar(tarea)" class="btn-danger" type="submit">Eliminar</button></td>
 
                         </tr>
 
 
                     </table>
-
-
+                </div>
+                </div>
                 </div>
             </div>
         </div>
-
     </div>
-</div>
-
 </div>
 </body>
 </html>
