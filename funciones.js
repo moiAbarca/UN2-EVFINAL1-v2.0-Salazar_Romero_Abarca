@@ -3,8 +3,12 @@
  */
 angular.module('myApp', [])
 
-    .factory('comun', function(){
+    /*.factory('comun', function(){
         var comun = {}
+
+        comun.tareas = [{}]
+
+        comun.tarea = {};
 
         comun.eliminar = function(tarea){
             var indice = comun.tareas.indexOf(tarea);
@@ -12,13 +16,13 @@ angular.module('myApp', [])
         }
 
         return comun;
-    })
+    })*/
 
-    .controller('ctrlTarea', function($scope, comun){
+    .controller('ctrlTarea', function($scope){
         $scope.tarea = {}
-        //$scope.tareas = [];
+        $scope.tareas = [];
 
-        $scope.tareas = comun.tareas;
+        //$scope.tareas = comun.tareas;
 
         $scope.agregar = function(){
             $scope.tareas.push({
@@ -34,4 +38,23 @@ angular.module('myApp', [])
             var indice = $scope.tareas.indexOf(tarea);
             $scope.tareas.splice(indice, 1);
         }
+
+        /*$scope.eliminar = function(tarea){
+            comun.eliminar(tarea)
+        }*/
+
+        $scope.editaObjeto = function(tarea){
+            var indice2 = $scope.tareas.indexOf(tarea);
+            var nuevoNombre = $scope.tarea;
+            var Objeto = $scope.tareas[indice2];
+            //$scope.tareas.splice(indice2, 1, $scope.tarea.nombre);
+            //$scope.tareas.update(indice2, $scope.tarea.nombre);
+            //$scope.tareas[indice2].push($scope.tarea.nombre);
+            $scope.tareas[indice2] = $scope.tarea;
+
+            //var nuevoObjeto= ($scope.tareas[indice2] = nuevoNombre);
+
+        }
+
+
     })

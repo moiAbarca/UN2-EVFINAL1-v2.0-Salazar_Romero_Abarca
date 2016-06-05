@@ -20,7 +20,7 @@
     <script src="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/funciones.js"></script>
 
     <div class="text-center">
-        <h2><I><PRE>Crear una nueva tarea</PRE></I></h2>
+        <h2><I><PRE>Sistema de ticket</PRE></I></h2>
 
 
         <div ng-controller="ctrlTarea" class="container">
@@ -28,7 +28,7 @@
             <div class="text-center has-feedback">
                 <input type="text" ng-model="tarea.nombre" placeholder="Ingrese nueva tarea" class="text-center form-control">
                 <br>
-                <button autofocus="autofocus" ng-click="agregar()" class="btn btn-success" type="submit">Crear Nueva Tarea</button>
+                <button autofocus="autofocus" ng-click="agregar()" class="btn btn-success" type="submit">Generar</button>
                 </div>
         </form>
 
@@ -50,7 +50,7 @@
                         <tr ng-repeat="tarea in tareas">
 
                             <td>{{tarea.nombre}}</td>
-                            <td><a href="../UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca/detalle.html" class="text-warning">Editar</a></td>
+                            <td><button ng-click="editaObjeto(tarea)" class="btn-default" type="submit">Editar</button></td>
                             <td><button ng-click="eliminar(tarea)" class="btn-danger" type="submit">Eliminar</button></td>
 
                         </tr>
