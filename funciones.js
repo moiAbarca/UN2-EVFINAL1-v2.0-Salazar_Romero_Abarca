@@ -44,16 +44,15 @@ angular.module('myApp', [])
         }*/
 
         $scope.editaObjeto = function(tarea){
+            $scope.tarea = tarea;
             var indice2 = $scope.tareas.indexOf(tarea);
-            var nuevoNombre = $scope.tarea;
-            var Objeto = $scope.tareas[indice2];
+            $scope.tareas[indice2] = $scope.tarea;
+            
             //$scope.tareas.splice(indice2, 1, $scope.tarea.nombre);
             //$scope.tareas.update(indice2, $scope.tarea.nombre);
             //$scope.tareas[indice2].push($scope.tarea.nombre);
-            $scope.tareas[indice2] = $scope.tarea;
-
-            //var nuevoObjeto= ($scope.tareas[indice2] = nuevoNombre);
-
+            //$scope.tarea = $scope.tareas[indice2];
+            
         }
 
 
