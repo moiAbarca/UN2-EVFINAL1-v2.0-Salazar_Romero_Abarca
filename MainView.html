@@ -50,7 +50,7 @@
                         <tr ng-repeat="tarea in tareas">
 
                             <td>{{tarea.nombre}}</td>
-                            <td><button ng-click="editaObjeto(tarea)" class="btn-default" type="submit">Editar</button></td>
+                            <td><button ng-click="editaObjeto(tarea)" class="btn-default" type="submit">Editar</button><br><button ng-show="ver" ng-click="editaObjeto(tarea)" class="btn-default" type="submit">Editar</button></td>
                             <td><button ng-click="eliminar(tarea)" class="btn-danger" type="submit">Eliminar</button></td>
 
                         </tr>
