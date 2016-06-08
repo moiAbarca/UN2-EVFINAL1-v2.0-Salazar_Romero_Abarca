@@ -7,11 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 var mongoose = require('mongoose');
-var tareas = mongoose.model('tareas');
+var Tareas = mongoose.model('Tareas');
 
 //GET método para listar tareas...haaa que funcione..jajajajaj
 router.get('/tareas', function (req, res, next) {
-  tareas.find(function (err, tareas) {
+  Tareas.find(function (err, tareas) {
     if(err){return next(err)}
     res.json(tareas)
   })
@@ -19,7 +19,7 @@ router.get('/tareas', function (req, res, next) {
 
 //POST agregar tarea
 router.post('/tarea', function(req, res, next){
-  var tarea = new tareas(req.body);
+  var tarea = new Tareas(req.body);
 
   tarea.save(function (err, tarea) {
     if (err){return next(err)}
@@ -29,7 +29,7 @@ router.post('/tarea', function(req, res, next){
 
 //PUT actulizar
 router.put('/tarea/:id', function (req, res) {
-  tareas.findById(req.params.id, function (err, tarea) {
+  Tareas.findById(req.params.id, function (err, tarea) {
     tarea.nombre = req.body.nombre;
 
     tarea.save(function (err) {
@@ -41,7 +41,7 @@ router.put('/tarea/:id', function (req, res) {
 
 //DEleTE
 router.delete('/tarea/:id', function (req, res) {
-  tareas.findByIdAndRemove(req.params.id, function (err) {
+  Tareas.findByIdAndRemove(req.params.id, function (err) {
     if (err){res.send(err)}
     res.json({message: 'Se ha eliminado la tarea'})
   })

@@ -8,8 +8,8 @@ var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://moisesabarca:s4nt14g0h4rdc0r3@ds011893.mlab.com:11893/un2-evfinal1')
 
-require('./models/tareas');
-require('./models/usuarios');
+require('./models/Tareas');
+require('./models/Usuarios');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');

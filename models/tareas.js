@@ -6,5 +6,5 @@ var TareasSchema = new mongoose.Schema({
     nombre: String
 });
 
-mongoose.model('tareas', TareasSchema);
+mongoose.model('Tareas', TareasSchema);
 

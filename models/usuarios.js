@@ -7,4 +7,4 @@ var UsuariosSchema = new mongoose.Schema({
     contraseña : String
 });
 
-mongoose.model('usuarios', UsuariosSchema);
+mongoose.model('Usuarios', UsuariosSchema);
