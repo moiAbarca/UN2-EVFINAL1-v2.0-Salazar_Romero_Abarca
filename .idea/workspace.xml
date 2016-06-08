@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7fc8d8f6-9a0e-49be-8cc4-bcc75915c0c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funciones.js" afterPath="$PROJECT_DIR$/funciones.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/tareas.js" afterPath="$PROJECT_DIR$/models/tareas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/usuarios.js" afterPath="$PROJECT_DIR$/models/usuarios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
     </list>
     <ignored path="UN2-EVFINAL1-v2.0-Salazar_Romero_Abarca.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -303,7 +298,7 @@
       <workItem from="1465260214080" duration="4469000" />
       <workItem from="1465318324183" duration="3360000" />
       <workItem from="1465426813174" duration="125000" />
-      <workItem from="1465428566812" duration="17000" />
+      <workItem from="1465428566812" duration="100000" />
     </task>
     <task id="LOCAL-00001" summary="4.3 plantillas con angular (no hice plantillas)">
       <created>1464286691316</created>
@@ -347,11 +342,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465183885439</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="6.6 faltan cosas">
+      <created>1465428664775</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1465428664775</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17625000" />
+    <option name="totallyTimeSpent" value="17708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -387,7 +389,8 @@
     <MESSAGE value="4.9 revisar" />
     <MESSAGE value="4.9 casi listo" />
     <MESSAGE value="5.6 revisar" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.6 revisar" />
+    <MESSAGE value="6.6 faltan cosas" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.6 faltan cosas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
